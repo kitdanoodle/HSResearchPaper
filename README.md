@@ -1,11 +1,16 @@
 # HSResearchPaper
 Research paper done with goal of bringing together an alternative form of hurricane database
 
-Hurricane Database Creation
+Hurricane Database Creation 
+
 AP Research
+
 April 16, 2025
+
 Word Count: 4210
-Literature Review
+
+**Literature Review**
+
 Meteorology requires many different components to function, but for it to be functioning
 to the public, it must be communicable and understandable. There are many ways for
 information to be communicated before, during, and after an event. Most data is typically
@@ -15,7 +20,10 @@ Atmospheric Association (NOAA), World Meteorological Organization (WMO), and Ame
 Meteorological Society (AMS), are the leaders for meteorological research and communication.
 NOAA contains most reports on meteorological events in the United States, as they are a part of
 the United States Government, including an Atlantic Hurricane Database.
-Hurricanes
+
+
+_Hurricanes_
+
 Tropical cyclones (alternatively known as Hurricanes, Typhoons, and Cyclones) are
 defined by NOAA as rotating low-pressure weather systems that have organized thunderstorms,
 but have no fronts (NOAA, 2024). Hurricanes are tropical cyclones that are specific to the
@@ -30,7 +38,9 @@ the center reform over the Northwestern Caribbean sea, finally becoming a Tropic
 (TD) on October 7th (NOAA, 2019). This cyclogenesis case would be caused by multiple factors,
 and the abnormal factors would involve the absorption of TS Kirk’s remains and the pacific
 vorticity, as neither are a common occurrence.
+
 Patterns & Frequency
+
 Many studies and experiments have been conducted to better conclude how different
 factors will affect how a Tropical Cyclone forms and behaves. But there have been other studies
 done to observe the patterns that many of these Cyclones will follow, and there is usually minor
@@ -55,7 +65,9 @@ development of tropical cyclones. This is due to its behaviors changing water te
 wind patterns in not only the Pacific Ocean, but also the Atlantic Ocean. Due to this, there are
 differentiating patterns in Cyclogenesis depending on whether it’s an El Niño, la Niña, or a
 neutral year.
+
 Strengthening
+
 While factors such as solar activity can affect the frequency and patterns taken on by
 tropical cyclones, it can also affect the strengthening processes. Through this there can be the
 issue that if a storm is in an area of prolonged effects through solar activity, it could go through
@@ -89,12 +101,17 @@ Despite the values themselves seeming small in differentiation, it does have a l
 behavior and genesis tracks in those areas. The averages during this time also provides some
 form of explanation for why cyclones in the Gulf of Mexico and Caribbean Sea tend to go
 through RI, and present quite strong more often than out in the Northern Atlantic.
+
+
 Databases
+
 Databases are organized collections created to store structure information (Oracle, 2020).
 Information from any medium can be displayed within a database; with a database comes
 flexibility to show information through text and visuals. They’re usually controlled by a database
 management system (DBMS) (Oracle, 2020).
+
 Requirements
+
 Databases come in many different formats, but they all still have the goal of being able to
 sort information while being easy to use. Following what was said in “Design for Six Sigma
 (DFSS) Approach for Creating CLEAR Lessons Learned Database” databases aim to be easily
@@ -115,7 +132,9 @@ the database. In the case of the NCDOT (North Carolina Department of Transportat
 Microsoft Access was used to host the data, as it would allow for mass sharing of information
 and easy input/viewing of the information needed, fitting into the day-to-day usage of personnel
 in the NCDOT (Banerjee, Jaselskis, and Alsharef, 2020).
+
 Database Definition
+
 Following the requirements, it must be clear which type of database is needed. Aside
 from DFSS, there are many other types of databases, such as analytical databases, cloud
 databases, and on-premises databases, with many others existing outside of these three. In the
@@ -125,7 +144,10 @@ interactions with it done through a web browser. NCDOT chose to do this as it wo
 the database to be easily supported by Microsoft Access and allow for it to be simple to use by
 their executives (Banerjee, Jaselskis, and Alsharef, 2020). This simplicity of use ties back to the
 initial definitions and goals of a database, that being user friendly and having ease of access/use.
-Databases in Meteorology
+
+_Databases in Meteorology_
+
+
 The NHC, a branch of NOAA, oversees communications of hurricane information in the
 Atlantic and Pacific Basins. Their communications range from televised communications, to
 texts, reports, and databases. Databases in specific are a medium of communication that is not
@@ -143,7 +165,9 @@ surge. With this revised database, on top of the base information about a hurric
 be added, including the aforementioned exclusions, with explanations of significance for some
 less common terms. The goal would be to inform, to allow for less miscommunications to occur,
 and for people to be able to better understand hurricane dangers, including influencing factors.
-Method
+
+**Method**
+
 NOAA’s job as the data gathering and processing entity of the National Weather Service
 (NWS) allows it to be able to hold all the data and information necessary to make this project
 possible. When looking throughout the website, you can find multiple locations that contain
@@ -164,9 +188,11 @@ understand manner, and certain things will involve explanations that allow for u
 significance when measured.
 To start on the design itself of the database, the basic information would be inputted in a
 side-by-side manner. Results resemble the appearance below.
-Hurricane name Hurricane Life Cycle Hurricane Category Hurricane Wind
-Speed
+<img width="865" height="102" alt="image" src="https://github.com/user-attachments/assets/6a83fe1b-4b5e-4003-a29f-7e682acce8e9" />
+
 This basic model allows for a base concept, with additional rows for information being added.
+
+
 There are different hosts that can be used to host/create a database, and one of the most
 frequently used is Postgres & PGAdmin4. Postgres is used to host databases, while PGAdmin4
 creates tables, columns, rows, and data inputs for the database. These were used specifically due
@@ -175,7 +201,10 @@ To create a database, open Postgres, and on the main page there may already be a
 or two already there, do not touch those servers. Instead, click the + icon, and name the server
 something that will be easy to identify and correlate with what is being done, in my case I did
 “AP Research 2025.”
+<img width="223" height="218" alt="image" src="https://github.com/user-attachments/assets/804baa75-9529-43fb-aa25-c49e81ffbb75" />
+
 Figure 1: Postgres Database name
+
 Leave Postgres running when PGAdmin4 is in use, as without it you will not be able to
 login and access the databases. Once in, access databases, then open the server you made
 previously. Navigate to Schemas, open schemas, then public, and finally tables. Right click
@@ -183,8 +212,12 @@ tables, click create, then name the table and save it. Create rows for the desir
 sure that an ID is created for each data input, this allows for ease of use when creating the
 display website. In the case of Hurricanes, Figure 1 SQL Table & Row Creation displays the
 SQL used to create the table & rows. All creation and data input can be done through SQL.
+
+<img width="583" height="430" alt="image" src="https://github.com/user-attachments/assets/3bc927e6-bb5f-45c7-9ff8-1058a892b20f" />
+
 Figure 2: SQL Code used to create the table and rows, listing whether a row can have a null value (in the
 case there is no data for that row).
+
 To allow for this database to be easy to use for the public, I chose to display it within a
 website. Any website coding language and Integrated Development Environment (IDE) could be
 used for this, but I chose to use HTML/CSS, JavaScript (JS), and C# through dotNet (.NET).
@@ -208,7 +241,12 @@ APIPostgres.cs will call on System.Text.Json, Endpoints.Interfaces, and
 Microsoft.Extensions.Options. These different calls will allow for the API to call on other files,
 read and write the database, and bridging between configurations. Refer to Appendix 1 to see
 calls.
+
+<img width="573" height="259" alt="image" src="https://github.com/user-attachments/assets/c905d0ad-008e-4448-8458-382299669717" />
+
 Figure 3: API Folder & File organization
+
+
 APIPostgres.cs will have ”public class APIPostgres : IAPI” with a private
 PostgresSettings command created with the value _settings. After that command is created, the
 _settings will be used in the next command, public APIPostgres, which will create options
@@ -251,7 +289,11 @@ to pull information from the database, using the API to display how many rows of
 displayed (numberOf(data)=(num)) and where it should start(startIndex=0). Starting at 0 tells the
 API to show the very first row, and the number inputted for num tells how many rows of data
 will be displayed. See Appendix 4 for full code.
-Analysis
+
+
+**Analysis**
+
+
 The website itself, and execution of the code worked just as needed. The product design
 had a starting page, introducing the purpose, where information was pulled from, and the names
 of the hurricanes displayed. The second page would contain the base information, the Hurricane
@@ -272,7 +314,9 @@ and understand. Each page could have an additional breakdown of the information 
 relevance, but that was not done. The website was able to load all information as long as
 Postgres was opened, if put into public domain some work would need to be done to allow for
 the data to be always displayed no matter the time of access.
-Limitations
+
+_Limitations_
+
 With the specific method that data was inputted into the database, the first limitation was
 created. This limitation is that all data would be manually inputted, which is time consuming.
 This method though would create the most accurate way to gather the data, as some of the data
@@ -300,7 +344,11 @@ my IDE, Rider by JetBrains, would not execute the code, saying .NET was not inst
 though it was installed on the device, Rider was not able to detect it, which would cause minor
 delays in the coding. Development would continue in Rider, then it would sync to Visual Studio
 to execute it. This would take more time than expected to be needed to develop the website.
-Conclusion
+
+
+**Conclusion**
+
+
 Realistically, making an alternative display for Hurricane data is feasible, but to the
 degree that NOAA does between their paper reports and multiple visualized databases would
 take far longer than the time allotted for this project.
@@ -314,43 +362,94 @@ visualization, more interactivity), could potentially become an alternative to N
 databases & displays for hurricane information. Not only could it display the information, but it
 could also possibly rank some information such as size, windspeed, and storm surge, to display
 which storm had the worst/largest of those categories.
-References
+
+
+_References_
+
+
 NOAA, 2019: Hurricane Michael, AL142018, 86 pp,
 https://www.nhc.noaa.gov/data/tcr/AL142018_Michael.pdf
 Banerjee, S., Jaselskis, E. J., Alsharef, A. F. 2020): Design For Six Sigma (DFSS) Approach for
 Creating CLEAR Lessons Learned Database. Periodica Polytechnica Architecture, Volume
 51(1), pp. 75-82.
 https://doi.org/10.3311/PPar.15442
+
 Atkinson, G. D., and Holliday, C. R., 1977: Tropical Cyclone Minimum Sea Level
 Pressure/Maximum Sustained Wind Relationship for the Western North Pacific. Mon. Wea. Rev.,
 105, 421-427,
 https://doi.org/10.1175/1520-0493(1977)105<0421:TCMSLP>2.0.CO;2.
+
 Oracle, 2020: What Is a Database? Accessed 15 November 2024,
 https://www.oracle.com/database/what-is-database/
 Hodges, R. E., and Elsner, J. B., 2012: The Spatial Pattern of the Sun-Hurricane Connection
 Across the North Atlantic, International Scholarly Research Notes, Volume 2012, Issue 1,
 https://doi.org/10.5402/2012/517962
+
 NOAA, 2024: What is a Hurricane? Accessed 7 November 2024,
 https://oceanservice.noaa.gov/facts/hurricane.html#:~:text=When%20the%20maximum%20susta
 ined%20winds%20of%20a%20tropical,be%20an%20awesome%20and%20destructive%20force
 %20of%20nature.
+
 Blacke, E. S., Landsea, C., and Gibney, E. J. 2011: The Deadlist, Costliest, and most Intense
 United States Tropical Cyclones from 1851 to 2010 (and Other Frequently Requested Hurricane
 Facts). NOAA Technical Memorandum NWS NHS, 6 (2011), pp. 13-21,
 https://repository.library.noaa.gov/view/noaa/6929
+
 NOAA, 2024: HURDAT 2: EP051962. NOAA Historical Hurricane Tracks, accessed 7
 November 2024,
 https://coast.noaa.gov/hurricanes/#map=4/32/-80
+
 NOAA and AOML, 2024: Ocean Observing System OL6: V3.0. NOAA CoastWatch and AOML
 Ocean Observations, accessed 7 November 2024,
 https://cwcgom.aoml.noaa.gov/cgom/OceanViewer/index_phod.html
-Appendices
-Appendix 1:
+
+_Appendices_
+
+**Appendix 1:**
+
 APIPostgres.cs:
+
+<img width="748" height="280" alt="image" src="https://github.com/user-attachments/assets/1e610c75-50d1-4cbe-b2ec-39e334b10a63" />
+
 APIPostgresSettings.cs:
+
+<img width="745" height="51" alt="image" src="https://github.com/user-attachments/assets/0925a68b-d73c-4ab7-a475-361ed3f1da70" />
+
 IAPI.cs:
+
+<img width="842" height="108" alt="image" src="https://github.com/user-attachments/assets/ce47b7a7-752a-4730-b99d-36d0abaac7c3" />
+
 API.cs:
-Appendix 2:
-Appendix 3:
-Appendix 4:
-Appendix 5:
+
+<img width="808" height="227" alt="image" src="https://github.com/user-attachments/assets/a92fa608-3f9d-47a7-af0e-ca1e70953455" />
+
+**Appendix 2:**
+
+<img width="858" height="677" alt="image" src="https://github.com/user-attachments/assets/71995b26-0855-489c-9a44-f1f68cbd6835" />
+<img width="856" height="355" alt="image" src="https://github.com/user-attachments/assets/b9b65ec7-d5ce-45a0-8c90-7eb77e1a6593" />
+
+**Appendix 3:**
+
+<img width="850" height="565" alt="image" src="https://github.com/user-attachments/assets/4a97b462-2f17-4f02-99ab-0d98386aaabc" />
+
+**Appendix 4:**
+
+<img width="858" height="604" alt="image" src="https://github.com/user-attachments/assets/ea195692-c4d7-4a53-a8ce-d2208e0080d3" />
+<img width="766" height="815" alt="image" src="https://github.com/user-attachments/assets/c83e171e-bca8-4c2b-b371-716f6070bf5c" />
+<img width="869" height="290" alt="image" src="https://github.com/user-attachments/assets/9cfca178-5f48-418a-aaaa-7040767a8660" />
+
+
+**Appendix 5:**
+
+<img width="857" height="496" alt="image" src="https://github.com/user-attachments/assets/9967b1d7-8d17-486c-ade5-1a655b866afd" />
+<img width="860" height="496" alt="image" src="https://github.com/user-attachments/assets/ce29836a-5f68-4c8b-ae64-0ac843a0fe4e" />
+<img width="855" height="497" alt="image" src="https://github.com/user-attachments/assets/fb03fd1e-9196-4257-b6ae-d7bcd6b4ba38" />
+<img width="860" height="495" alt="image" src="https://github.com/user-attachments/assets/3fb278f4-a63d-44ab-9ee0-e9228bfa4217" />
+<img width="861" height="493" alt="image" src="https://github.com/user-attachments/assets/71ef7441-12d3-47d9-8f1c-a05939d98677" />
+<img width="859" height="499" alt="image" src="https://github.com/user-attachments/assets/d5ffd454-d64e-498c-b336-6fe38fc7d28d" />
+<img width="860" height="494" alt="image" src="https://github.com/user-attachments/assets/5e4dffd5-e998-47b4-a99e-4d9e0f347695" />
+<img width="859" height="497" alt="image" src="https://github.com/user-attachments/assets/7ad43479-b6ac-44dc-9d8c-9ab46b078c43" />
+
+
+
+
